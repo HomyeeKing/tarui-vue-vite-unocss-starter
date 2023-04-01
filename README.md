@@ -27,3 +27,5 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 - [Vue](https://github.com/vuejs/core) for frontend UI
 - [unocss](https://github.com/unocss/unocss) for atomic CSS use and better implement style
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) for auto import Vue Componets in `src/components` folder
+- [vueuse](https://github.com/vueuse/vueuse) for quick logic implement
+- [unplugin-icons](https://github.com/antfu/unplugin-icons) for access icons as component
