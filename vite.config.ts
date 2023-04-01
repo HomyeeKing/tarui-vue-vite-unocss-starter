@@ -1,18 +1,26 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import Components from 'unplugin-vue-components/vite';
-import UnoCSS from 'unocss/vite';
-import { presetAttributify, presetIcons, presetUno } from 'unocss';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import Components from 'unplugin-vue-components/vite'
+import UnoCSS from 'unocss/vite'
+import { presetAttributify, presetIcons, presetUno } from 'unocss'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
 
-const mobile =
-  process.env.TAURI_PLATFORM === 'android' ||
-  process.env.TAURI_PLATFORM === 'ios';
+const mobile
+  = process.env.TAURI_PLATFORM === 'android'
+  || process.env.TAURI_PLATFORM === 'ios'
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
   plugins: [
     vue(),
-    Components(),
+    Components({
+      resolvers: [
+        IconsResolver({
+          componentPrefix: '',
+        }),
+      ],
+    }),
     UnoCSS({
       theme: {
         fontFamily: {
@@ -22,15 +30,19 @@ export default defineConfig(async () => ({
       presets: [
         presetIcons({
           extraProperties: {
-            display: 'inline-block',
-            height: '1.2em',
-            width: '1.2em',
+            'display': 'inline-block',
+            'height': '1.2em',
+            'width': '1.2em',
             'vertical-align': 'text-bottom',
           },
         }),
         presetAttributify(),
         presetUno(),
       ],
+    }),
+    Icons({
+      defaultClass: 'inline',
+      defaultStyle: 'vertical-align: sub;',
     }),
   ],
 
@@ -53,4 +65,4 @@ export default defineConfig(async () => ({
     // produce sourcemaps for debug builds
     sourcemap: !!process.env.TAURI_DEBUG,
   },
-}));
+}))

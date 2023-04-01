@@ -14,15 +14,18 @@
   },
   "dependencies": {
     "@tauri-apps/api": "^1.2.0",
+    "@vueuse/core": "^9.13.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@iconify-json/tabler": "^1.1.70",
+    "@antfu/eslint-config": "^0.38.2",
+    "@iconify-json/carbon": "^1.1.16",
     "@tauri-apps/cli": "^1.2.3",
     "@types/node": "^18.15.11",
     "@vitejs/plugin-vue": "^4.1.0",
     "typescript": "^5.0.3",
     "unocss": "^0.50.6",
+    "unplugin-icons": "^0.16.1",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.2.1",
     "vue-tsc": "^1.2.0"
