@@ -9,6 +9,9 @@ dependencies:
     version: 3.2.47
 
 devDependencies:
+  '@iconify-json/tabler':
+    specifier: ^1.1.70
+    version: 1.1.70
   '@tauri-apps/cli':
     specifier: ^1.2.3
     version: 1.2.3
@@ -279,6 +282,12 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@iconify-json/tabler@1.1.70:
+    resolution: {integrity: sha512-aeeaCs8qIqd008uNN9TqJkDUVztRGrGjiMvSNQuRhmRzL3A7tI1DIzfaFYxsgYycpV3iizhnNWB3wJCjFoVI4w==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
