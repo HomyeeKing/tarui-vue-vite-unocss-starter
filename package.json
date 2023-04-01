@@ -1,8 +1,11 @@
 {
-  "name": "homac",
+  "name": "tauri-starter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "HomyeeKing"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
