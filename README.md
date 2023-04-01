@@ -14,3 +14,11 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
 
 You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+
+
+# Credits
+- [Tarui](https://github.com/tauri-apps/tauri) to build Desktop Applications
+- [Vite](https://github.com/vitejs/vite) for instant DX and large ecosystem
+- [Vue](https://github.com/vuejs/core) for frontend UI
+- [unocss](https://github.com/unocss/unocss) for atomic CSS use and better implement style
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) for auto import Vue Componets in `src/components` folder
